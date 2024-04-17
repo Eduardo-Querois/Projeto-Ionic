@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>disciplina</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">disciplina</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div>
+    <ion-list class="d-flex align-items-center justify-content-center">
+      <ion-item>
+      <ion-input label="Disciplina" [(ngModel)] = "name" value="selectedOption" aria-placeholder="Nome da Disciplina"></ion-input>
+        <ion-select [(ngModel)]="selectedOption">
+          <ion-select-option value="1° Semestre"> Matematica</ion-select-option>
+          <ion-select-option value="2° Semestre"> Banco de Dados</ion-select-option>
+          <ion-select-option value="3° Semestre"> Programação Web</ion-select-option>
+          <ion-select-option value="4° Semestre"> Introdução a programação</ion-select-option>
+          <ion-select-option value="5° Semestre"> ingles</ion-select-option>
+          <ion-select-option value="6° Semestre"> TCC</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+      <ion-input label="Semestre" [(ngModel)] = "semestre" aria-placeholder="Qual o semestre"></ion-input>    
+       
+        <ion-select [(ngModel)]="selectedOption2">
+          <ion-select-option value="1° Semestre">1° Semestre </ion-select-option>
+          <ion-select-option value="2° Semestre">2° Semestre </ion-select-option>
+          <ion-select-option value="3° Semestre">3° Semestre</ion-select-option>
+          <ion-select-option value="4° Semestre">4° Semestre</ion-select-option>
+          <ion-select-option value="5° Semestre">5° Semestre</ion-select-option>
+          <ion-select-option value="6° Semestre">6° Semestre</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-button (click)="adicionar()">Adicionar</ion-button>
+      
+    </ion-list>
+    
+  </div>
+
+  
+</ion-content>

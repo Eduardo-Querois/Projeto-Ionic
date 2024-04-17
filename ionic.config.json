@@ -1,0 +1,7 @@
+{
+  "name": "materias",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

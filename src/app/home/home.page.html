@@ -1,0 +1,43 @@
+
+
+<ion-content [fullscreen]="true">
+  
+  
+  <ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="tertiary">
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-content class="ion-padding" color="medium">    
+    <ion-item routerLink="/home"        color="tertiary">Home</ion-item>
+    <ion-item routerLink="/disciplina"  color="tertiary">Adicionar Disciplina</ion-item> 
+    <ion-item routerLink="/grade"       color="tertiary">Grades</ion-item>
+    <ion-item routerLink="/minha-grade" color="tertiary">Grades Selecionadas</ion-item> 
+  </ion-content>
+</ion-menu>
+
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="tertiary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Pagina Inicial</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding" color="light"> 
+     
+  </ion-content>
+</div>
+
+  <div id="container">
+  </div>
+</ion-content>
